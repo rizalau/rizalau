@@ -38,8 +38,6 @@
 .leader-item img {
   height: 200px;
   width: 200px;
-  border-radius: 47% 53% 62% 38% / 63% 60% 40% 37%;
-  box-shadow: 6px 20px 50px rgba(0, 0, 0, 0.1);
 }
 
 /*services*/
@@ -214,8 +212,8 @@
 }
 
 .main-timeline .date-outer {
-  width: 125px;
-  height: 125px;
+  width: 150px;
+  height: 150px;
   font-size: 16px;
   text-align: center;
   margin: auto;
@@ -225,8 +223,8 @@
 .main-timeline .date-outer:before,
 .main-timeline .date-outer:after {
   content: '';
-  width: 125px;
-  height: 125px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
   border-radius: 50%;
   position: absolute;
@@ -270,7 +268,7 @@
 
 .main-timeline .year {
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   color: #232323;
   line-height: 36px;

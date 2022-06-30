@@ -225,11 +225,6 @@
   flex-wrap: wrap;
 }
 
-iframe {
-  width: 40%;
-  height: 300px;
-}
-
 .lemuria-text h2 {
   line-height: 110%;
   font-size: 80px;
@@ -581,4 +576,19 @@ iframe {
     padding: 0 20%;
     padding-bottom: 30px;
   }
+
+.btn {
+  display: inline-block;
+  background: #4285F4;
+  color: #fff;
+  width: 240px;
+  height: 50px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  margin: 2rem 0;
 }
