@@ -1,0 +1,291 @@
+/*  awal 3d */
+.android-box {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  height: 300px;
+  transform-style: preserve-3d;
+}
+.android-box::before {
+  content: 'MY';
+  position: absolute;
+  color: rgb(29, 29, 29);
+  font-size: 2.1em;
+  font-weight: bold;
+  font-style: italic;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0, 5s;
+}
+.android-box:hover::before {
+  opacity: 0.8;
+}
+.android-box::after {
+  content: 'GLOFTECH';
+  position: absolute;
+  color: rgb(33, 33, 33);
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 205px;
+  left: 100px;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0, 5s;
+}
+.android-box:hover::after {
+  left: -20px;
+  transform: translate(100%, 0);
+  opacity: 0.7;
+}
+.android-name {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  color: rgb(46, 45, 45);
+  text-align: center;
+  font-size: 1.5em;
+  opacity: 1;
+  transform: translate3d(0, 0, 50px);
+  transform: 0.5s;
+}
+.android-box:hover .android-name {
+  top: 20px;
+  opacity: 1;
+}
+.android-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.android-box:hover .android-detail-button {
+  opacity: 1;
+  bottom: 10px;
+}
+.android-img {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 80px);
+  max-width: 100px;
+  transition: 0.5;
+  z-index: 10;
+}
+.android-box:hover .android-img {
+  transform: translate3d(-50%, -52%, 80px) scale(1.2);
+}
+.aboutus-text {
+  padding-right: 0;
+  text-align: center;
+}
+.aboutus-text {
+  padding-right: 0;
+}
+.aboutus-ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 992px) {
+  .aboutus-ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.aboutus-ul,
+.aboutus-ul li {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+
+.aboutus-ul li i {
+  margin-right: 10px;
+}
+.jumbotron6 {
+  padding-top: 2rem;
+  background-color: #252525;
+}
+.service-item .fas {
+  font-size: 50px;
+}
+.fas {
+  color: #26d34e;
+}
+.carousel-item {
+  height: 32rem;
+  background: ;
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.astaga {
+  height: 32rem;
+  background: #000;
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+.box-wrap {
+  position: relative;
+  padding: 7em 0;
+  width: 100%;
+}
+.box-wrap {
+  padding: 3em 0;
+}
+.title-heading.center {
+  text-align: center;
+}
+.title-heading h6 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.title-heading .meta-title {
+  position: relative;
+  padding-left: 37px;
+  margin-left: 2px;
+}
+.title-heading .meta-title:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 1px;
+  left: 0;
+  top: 7px;
+  background-color: #252525;
+}
+.title-heading h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+.title-heading h1 span {
+  color: red;
+}
+.title-heading h1 {
+  color: white;
+}
+.title-heading h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: inherit;
+}
+.our-clients .logo-clients,
+.clients .logo-clients {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 3em;
+  justify-content: center;
+}
+.our-clients {
+  position: relative;
+  background-color: #252525;
+}
+.tongue::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 138px;
+  height: 35px;
+  left: 50%;
+  z-index: auto;
+}
+.top.tongue::before {
+  top: 0;
+  transform: translate(-50%, 0) scaleY(1);
+  background: url(img/tongue.svg) no-repeat;
+}
+.top.tongue.grey::before {
+  top: 0;
+  transform: translate(-50%, 0) scaleY(1);
+  background: url(img/tongue-grey.svg) no-repeat;
+}
+.btm.tongue::before {
+  bottom: 0;
+  transform: translate(-50%, 0) scaleY(-1);
+  background: url(/tongue.svg) no-repeat;
+}
+.tongue::after {
+  position: absolute;
+  content: '';
+  display: block;
+  background: url(../images/arrow.svg) no-repeat;
+  width: 14px;
+  height: 11px;
+  left: 50%;
+  z-index: auto;
+}
+.komputer-img {
+  top: 100%;
+  left: 2%;
+  max-width: 100px;
+  z-index: 10;
+}
+.slider-text-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  left: 0;
+  margin-top: -125px;
+  text-align: center;
+  z-index: 999;
+}
+.slider-text-wrapper .btn {
+  margin-top: 60px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.big {
+  font-size: 35px;
+  line-height: 52px;
+}
+
+.small {
+  font-size: 19px;
+}
+.big {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin: 6px -10px;
+  color: #fff;
+}
+
+.small {
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
+  margin: 30px 0px 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+}

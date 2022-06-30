@@ -1,0 +1,584 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 10%;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.nav-link {
+  color: white;
+}
+
+.pt {
+  width: 50%;
+}
+
+.carousel,
+.carousel-indicator,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+  object-fit: cover;
+}
+
+.carousel-item {
+}
+
+.header .carousel-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /*background: -webkit-gradient(linear, left top, right top, color-stop(30%, #ed3a3a8f), color-stop(30, #ed3a3a70), color-stop(20, #ed3a3a09));*/
+  /*  background: linear-gradient(90deg, #ed3a3a8f 30%, #ed3a3a70 30, #ed3a3a09 20);
+*/
+}
+
+.header {
+  margin-bottom: 5em;
+}
+
+/*about us*/
+
+.aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel-caption {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.aboutus .img .aboutus-img {
+  display: inline-flex;
+  object-fit: cover;
+  justify-content: flex-end;
+}
+
+.img {
+  text-align: end;
+}
+
+.aboutus-img {
+  width: 80%;
+}
+
+.aboutus-ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 992px) {
+  .aboutus-ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.aboutus-ul,
+.aboutus-ul li {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+
+.aboutus-ul li i {
+  margin-right: 10px;
+}
+
+.fas {
+  color: red;
+}
+
+.aboutus-text {
+  padding-right: 0;
+  text-align: center;
+}
+
+/*end about us*/
+
+/*work performance*/
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.work-item {
+  text-align: start;
+  align-items: center;
+}
+
+.counter {
+  color: red;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.item-text p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*end work performance*/
+
+/*services*/
+
+.service {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 7em;
+}
+
+.service-content {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.service-item .fas {
+  font-size: 50px;
+}
+
+.service-item-desc {
+  margin-top: 30px;
+  width: 100%;
+  text-align: start;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.service-item-desc h3,
+.service-item-desc p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.seemore {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.seemore a {
+  color: black;
+}
+
+.seemore a:hover {
+  color: red;
+}
+/*end services*/
+
+/*lemuria*/
+
+.lemuria-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.youtube-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lemuria-text {
+  text-align: start | center;
+  justify-content: flex-start;
+  width: 57%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+iframe {
+  width: 40%;
+  height: 300px;
+}
+
+.lemuria-text h2 {
+  line-height: 110%;
+  font-size: 80px;
+  height: auto;
+
+  background: linear-gradient(to right, #fdfe96, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*end lemuria*/
+
+/*testimonial*/
+
+.testimonial .carousel,
+.youtube .carousel {
+  height: 40%;
+}
+
+.testimonial,
+.youtube {
+  background-color: #252525;
+}
+
+.testimonial .carousel-user,
+.youtube .carousel-user {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+}
+
+.youtube .carousel-card {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial .carousel-card {
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial .carousel-card h3,
+.carousel-card p,
+.youtube .carousel-card h3,
+.youtube .carousel-card p {
+  text-align: center;
+  max-height: 100px;
+  overflow: scroll;
+  width: 90%;
+  color: white;
+}
+
+.testimonial .carousel-card img,
+.youtube .carousel-card img {
+  border: 5px solid red;
+  margin: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/*end testimonial*/
+
+/*client*/
+
+.client {
+  background-color: #f4f4f4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client .carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.client,
+.client .carousel,
+.client .carousel-inner,
+.client .carousel-item,
+.carousel-client,
+.client .carousel-card {
+  height: 200px;
+}
+
+.client .carousel-inner {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.carousel-client {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.carousel-client .carousel-card {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.carousel-client .carousel-card img {
+  margin: 0 auto;
+  width: auto;
+
+  height: 100px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/*end client*/
+
+/*blog*/
+
+/*end blog*/
+
+.carousel-desc {
+  width: 60%;
+  font-size: 20px;
+}
+
+.carousel-caption h1 {
+  font-size: 60px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------    M E D I A   Q U E R Y    --------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 320px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    padding: 0 5%;
+  }
+
+  /*carousel*/
+
+  .carousel,
+  .carousel-indicator,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+
+  .carousel-desc {
+    width: 100%;
+  }
+
+  /*end carousel*/
+
+  /*about*/
+
+  .work {
+    width: 92%;
+    margin: -100px 15px 10px 15px;
+  }
+
+  .aboutus-text {
+    padding-right: 0;
+  }
+
+  .aboutus .img .aboutus-img {
+    width: 100%;
+    text-align: end;
+    object-fit: cover;
+    justify-content: flex-end;
+  }
+
+  /*end carousel*/
+
+  /*lemuria*/
+
+  iframe {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+
+  .lemuria-text {
+    text-align: center;
+    height: auto;
+    width: 100%;
+  }
+
+  .lemuria-text h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  /*end lemuria*/
+
+  /*feedback*/
+
+  .feedback-card {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: auto;
+  }
+
+  .whychooseus {
+    width: 100%;
+    text-align: start;
+
+    height: auto;
+    padding: 5%;
+  }
+
+  .whychooseus-item {
+    display: flex;
+    flex-wrap: nowrap;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: start;
+    justify-content: flex-start;
+  }
+
+  .whychooseus-item i {
+    font-size: 40px;
+  }
+
+  .whychooseus h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .whychooseus-text h3 {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .whychooseus-text p {
+    text-align: start;
+    font-size: 16px;
+  }
+
+  .forum {
+    border-radius: 0 0 10px 10px;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #f0f4f8;
+  }
+
+  form h2 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  /*end feedback*/
+
+  /*map*/
+
+  .contact {
+    width: 100%;
+  }
+
+  .sosmed {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
+  .map-text {
+  }
+
+  /*end map*/
+
+  /*testimonial*/
+
+  .testimonial .carousel-card img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid red;
+  }
+
+  /*end testimonial*/
+
+  .carousel-client .carousel-card img {
+    margin: 0 10px;
+    width: 100%;
+
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  /*footer*/
+
+  /*end footer*/
+}
+
+@media (min-width: 2560px) {
+  .container {
+    padding: 0;
+  }
+
+  form {
+    padding: 0 20%;
+    padding-bottom: 30px;
+  }
+}
