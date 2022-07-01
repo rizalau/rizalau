@@ -5481,6 +5481,7 @@ a.close.disabled {
 .carousel-fade .carousel-item-prev.carousel-item-right {
   z-index: 1;
   opacity: 1;
+  height: 600px;
 }
 
 .carousel-fade .active.carousel-item-left,
